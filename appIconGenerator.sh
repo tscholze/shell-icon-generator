@@ -21,7 +21,7 @@ COLOR_DEFAULT='\033[0m'
 OUTPUT_DIR='appicon_output'
 
 # Check if first argument is set
-if !([ $1 ])
+ if [[ ! -n $1 ]]
 then
 	echo -e "${COLOR_RED}ERROR:${COLOR_DEFAULT} Usage: '$0 path/to/master-file.png'"
 	exit 1
@@ -35,7 +35,7 @@ then
 fi
 
 # Check if file exists
-if !([ -f $1 ])
+if [[ ! -f $1 ]]
 then
 	echo -e "${COLOR_RED}ERROR:\033[0m File ${1} does not exist"
 	exit 1
