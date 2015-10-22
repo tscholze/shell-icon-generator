@@ -2,7 +2,7 @@
 This simple bash script is an ImageMagick based icon generator for iOS 7 / 8 / 9 apps.
 
 ## Requirements
-* ImageMagick (`brew install ImageMagick``)
+* ImageMagick (`brew install ImageMagick`)
 
 ## Installation
 1. `git clone https://github.com/tscholze/shell-icon-generator.git` 
