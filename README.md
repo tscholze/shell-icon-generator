@@ -13,11 +13,19 @@ This simple bash script is an ImageMagick based icon generator for iOS 7 / 8 / 9
 * `./appIconGenerator.sh masterImage.png`
 * `appicon_output/` contains all generated images 
 
+## Best practice
+* Master file should has a dimension of 1024x1024 or greater
+* An interlaced *.png file is highly recommanded
+
 ## Screenshots
 
 ![Screenshot](https://github.com/tscholze/shell-icon-generator/blob/master/doc/terminal.png?raw=true "Terminal")
 
 ![Screenshot](https://github.com/tscholze/shell-icon-generator/blob/master/doc/finder.png?raw=true "Finder")
+
+## Known 'room for improvements'
+* Missing dimension checker to avoid pixelated results
+* If one or more generations failed, the overall status is nonetheless an okay'ish green
 
 ## Generated dimensions
 * 22x22 (Toolbar and Navigationbar Icon @1x)
@@ -38,3 +46,5 @@ This simple bash script is an ImageMagick based icon generator for iOS 7 / 8 / 9
 
 # License
 Due to the fact that this script is heavly based on ImageMagick. The licence is the [ImageMagick license](http://www.imagemagick.org/script/license.php).
+
+Thanks to [Lemming](https://openclipart.org/user-detail/lemmling) for providing the awesome sheep icon.
