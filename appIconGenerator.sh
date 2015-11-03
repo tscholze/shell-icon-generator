@@ -60,7 +60,13 @@ convert $1 -resize 29x29! $OUTPUT_DIR/$(basename $1 .png)-29.png
 echo "Generating 44x44 (Toolbar and Navigationbar Icon @2x)"
 convert $1 -resize 44x44! $OUTPUT_DIR/$(basename $1 .png)-44.png
 
-echo "Generating 58x58 (Settings Icon @2x)"
+echo "Generating 48x48 (Apple Watch 38mm Notification center Icon)"
+convert $1 -resize 48x48! $OUTPUT_DIR/$(basename $1 .png)-48.png
+
+echo "Generating 55x55 (Apple Watch 42mm Notification center Icon)"
+convert $1 -resize 55x55! $OUTPUT_DIR/$(basename $1 .png)-55.png
+
+echo "Generating 58x58 (Settings Icon, Apple Watch 38mm App Icon @2x)"
 convert $1 -resize 58x58! $OUTPUT_DIR/$(basename $1 .png)-58.png
 
 echo "Generating 60x60 (Spotlight Search Icon for Tablets @1x)"
@@ -72,11 +78,14 @@ convert $1 -resize 66x66! $OUTPUT_DIR/$(basename $1 .png)-66.png
 echo "Generating 76x76 (App Icon, Web @1x)"
 convert $1 -resize 76x76! $OUTPUT_DIR/$(basename $1 .png)-76.png
 
-echo "Generating 80x80 (Spotlight Search Icon @2x)"
+echo "Generating 80x80 (Spotlight Search Icon @2x, Apple Watch Home Screen, 38mm Long-Look)"
 convert $1 -resize 80x80! $OUTPUT_DIR/$(basename $1 .png)-80.png
 
-echo "Generating 87x87 (Settings Icon @3x)"
+echo "Generating 87x87 (Settings Icon @3x, Apple Watch 42mm App Icon @2x)"
 convert $1 -resize 87x87! $OUTPUT_DIR/$(basename $1 .png)-87.png
+
+echo "Generating 88x88 (Apple Watch 42mm Long-Look)"
+convert $1 -resize 88x88! $OUTPUT_DIR/$(basename $1 .png)-88.png
 
 echo "Generating 120x120 (Spotlight Search Icon for Tablets, App Icon, Web @2x)"
 convert $1 -resize 120x120! $OUTPUT_DIR/$(basename $1 .png)-120.png
@@ -87,8 +96,14 @@ convert $1 -resize 152x152! $OUTPUT_DIR/$(basename $1 .png)-152.png
 echo "Generating 167x167 (App Icon, Web @2x for iPad Pro)"
 convert $1 -resize 167x167! $OUTPUT_DIR/$(basename $1 .png)-167.png
 
+echo "Generating 172x172 (Apple Watch 38mm Short-Look Icon)"
+convert $1 -resize 172x172! $OUTPUT_DIR/$(basename $1 .png)-172.png
+
 echo "Generating 180x180 (Spotlight Search Icon for Tablets, App Icon, Web @3x)"
 convert $1 -resize 180x180! $OUTPUT_DIR/$(basename $1 .png)-180.png
+
+echo "Generating 196x196 (Apple Watch 42mm Short-Look Icon)"
+convert $1 -resize 196x196! $OUTPUT_DIR/$(basename $1 .png)-196.png
 
 echo "Generating 1024x1024 (App Store Icon)"
 convert $1 -resize 1024x1024! $OUTPUT_DIR/$(basename $1 .png)-1024.png
