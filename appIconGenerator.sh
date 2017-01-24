@@ -51,11 +51,17 @@ echo "---"
 echo "Using master file: $1"
 echo "---"
 
+echo "Generating 20x20 (iPad Notification Icon @1x)"
+convert $1 -resize 20x20! $OUTPUT_DIR/$(basename $1 .png)-20.png
+
 echo "Generating 22x22 (Toolbar and Navigationbar Icon @1x)"
 convert $1 -resize 22x22! $OUTPUT_DIR/$(basename $1 .png)-22.png
 
 echo "Generating 29x29 (Settings Icon @1x)"
 convert $1 -resize 29x29! $OUTPUT_DIR/$(basename $1 .png)-29.png
+
+echo "Generating 40x40 (iPad Notification Icon @2x)"
+convert $1 -resize 40x40! $OUTPUT_DIR/$(basename $1 .png)-40.png
 
 echo "Generating 44x44 (Toolbar and Navigationbar Icon @2x)"
 convert $1 -resize 44x44! $OUTPUT_DIR/$(basename $1 .png)-44.png
