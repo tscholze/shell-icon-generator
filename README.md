@@ -28,8 +28,10 @@ This simple bash script is an ImageMagick based icon generator for iOS 7 / 8 / 9
 * If one or more generations failed, the overall status is nonetheless an okay'ish green
 
 ## Generated dimensions
+* 20x20 (iPad Notification Icon @1x)
 * 22x22 (Toolbar and Navigationbar Icon @1x)
 * 29x29 (Settings Icon @1x)
+* 40x40 (iPad Notification Icon @2x)
 * 44x44 (Toolbar and Navigationbar Icon @2x)
 * 58x58 (Settings Icon @2x)
 * 60x60 (Spotlight Search Icon for Tablets @1x)
@@ -43,6 +45,8 @@ This simple bash script is an ImageMagick based icon generator for iOS 7 / 8 / 9
 * 180x180 (Spotlight Search Icon for Tablets, App Icon, Web @3x)
 * 1024x1024 (App Store Icon)
 * For further information see [offical Apple developer documentation](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html)
+
+Some dimensions have multiple usages as app icons.
 
 # License
 Due to the fact that this script is heavly based on ImageMagick. The licence is the [ImageMagick license](http://www.imagemagick.org/script/license.php).
